@@ -1,0 +1,27 @@
+:root {
+	--theme-primary: brown;
+	--theme-primary-dark: rgb(94, 21, 21);
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#root {
+	background-color: var(--theme-primary-dark);
+}
+
+header {
+	height: 64px;
+	background-color: var(--theme-primary);
+}
+
+main {
+	min-height: 512px;
+}
+
+footer {
+	height: 128px;
+	background-color: var(--theme-primary);
+}
