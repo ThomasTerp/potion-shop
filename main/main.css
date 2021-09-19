@@ -1,11 +1,14 @@
 :root {
 	--theme-primary: brown;
 	--theme-primary-dark: rgb(94, 21, 21);
+	--theme-primary-text: white;
+	--theme-primary-shadow: black;
 }
 
 html, body {
 	margin: 0px;
 	padding: 0px;
+	font-size: 100%;
 }
 
 #root {
@@ -18,7 +21,7 @@ header {
 }
 
 main {
-	min-height: 512px;
+	min-height: 1024px;
 }
 
 footer {

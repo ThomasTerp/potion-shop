@@ -1,19 +1,43 @@
 
 .counter {
-    height: 256px;
-    background-color: teal;
+	height: 256px;
+	background-color: teal;
 }
 
 .shelf {
-    display: grid;
-    grid-template-columns: repeat(4, 256px);
-    justify-content: center;
-    column-gap: 16px;
-    row-gap: 16px;
+	background-image: url("shelf.png");
+	font-size: 0rem;
+	margin: 0 auto;
 }
 
 .potion {
-    background-color: black;
-    width: 256px;
-    height: 256px;
+	position: relative;
+	display: inline-block;
+	font-size: 1rem;
+}
+
+.potion > .title {
+	margin-top: 20px;
+	color: var(--theme-primary-text);
+	font-size: 1.2rem;
+	text-shadow: 1px 1px var(--theme-primary-shadow);;
+}
+
+.potion > .photo {
+	position: absolute;
+	bottom: 30px;
+	left: 0px;
+	right: 0px;
+	margin: 0px auto;
+	height: 140px;
+}
+
+.potion > .tag {
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	right: 0px;
+	margin: 0px auto;
+	width: min-content;
+	color: var(--theme-primary-text);
 }
