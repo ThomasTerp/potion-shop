@@ -1,6 +1,13 @@
+
+@font-face {
+  src: url(IMMORTAL.ttf);
+  font-family: IMMORTAL;
+  font-weight: bold;
+}
+
 :root {
-	--theme-primary: brown;
-	--theme-primary-dark: rgb(94, 21, 21);
+	--theme-primary: #3f200f;
+	--theme-primary-dark: #1A0D06;
 	--theme-primary-text: white;
 	--theme-primary-shadow: black;
 }
@@ -8,6 +15,7 @@
 html, body {
 	margin: 0px;
 	padding: 0px;
+	font-family: IMMORTAL;
 	font-size: 100%;
 }
 
@@ -16,15 +24,74 @@ html, body {
 }
 
 header {
-	height: 64px;
-	background-color: var(--theme-primary);
+	background-image: url(header.png);
+	height: 157px;
+}
+
+nav {
+	position: absolute;
+	left: 460px;
+	top: 64px;
+}
+
+nav > a {
+	text-decoration: none;
+	color: var(--theme-primary-text);
+	font-size: 2rem;
+	padding-right: 1rem;
+}
+
+nav > a:visited {
+	color: var(--theme-primary-text);
+	white-space: nowrap;
 }
 
 main {
-	min-height: 1024px;
+	background-image: url(background.png);
+	background-position-x: center;
+	overflow-x: hidden;
 }
 
 footer {
-	height: 128px;
-	background-color: var(--theme-primary);
+	background-image: url(footer.png);
+	background-color: var(--theme-primary-dark);
+	background-repeat: no-repeat;
+	height: 256px;
 }
+
+.logo {
+	font-size: 0px;
+}
+
+.logo > img {
+	padding: 30px;
+}
+
+.beam {
+	background-image: url(beam-horizontal.png);
+	height: 48px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	nav {
+		left: 20px;
+		top: 96px;
+	}
+
+	.logo > img {
+		padding: 6px;
+	}
+}
+
+
+@media only screen and (max-width: 520px) {
+	nav {
+		top: 100px;
+	}
+
+	nav > a {
+		font-size: 1.6rem;
+	}
+}
+

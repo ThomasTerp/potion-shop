@@ -54,7 +54,7 @@ $(() =>
 
 			// Curve the potoin title
 			new CircleType($potion.find(".title")[0])
-				.radius(150);
+				.radius(300);
 		}
 	});
 });

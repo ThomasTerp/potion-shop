@@ -1,13 +1,40 @@
 
 .counter {
-	height: 256px;
-	background-color: teal;
+	background-image: url(counter-background.png);
+	background-color: var(--theme-primary-dark);
+	background-position-y: bottom;
+	background-repeat: no-repeat;
+	height: 400px;
 }
 
 .shelf {
+	position: relative;
 	background-image: url("shelf.png");
 	font-size: 0rem;
 	margin: 0 auto;
+}
+
+.shelf::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	background-image: url(../main/beam-vertical.png);
+	width: 48px;
+	margin-left: -48px;
+}
+
+.shelf::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	background-image: url(../main/beam-vertical.png);
+	width: 48px;
+	margin-right: -48px;
 }
 
 .potion {
@@ -17,10 +44,10 @@
 }
 
 .potion > .title {
-	margin-top: 20px;
+	margin-top: 16px;
 	color: var(--theme-primary-text);
-	font-size: 1.2rem;
-	text-shadow: 1px 1px var(--theme-primary-shadow);;
+	font-size: 1.4rem;
+	text-shadow: var(--theme-primary-shadow) 0px 0px 1px, var(--theme-primary-shadow) 0px 0px 1px, var(--theme-primary-shadow) 0px 0px 1px, var(--theme-primary-shadow) 0px 0px 1px, var(--theme-primary-shadow) 0px 0px 1px, var(--theme-primary-shadow) 0px 0px 1px;;
 }
 
 .potion > .photo {
@@ -34,10 +61,11 @@
 
 .potion > .tag {
 	position: absolute;
-	bottom: 5px;
+	bottom: 0px;
 	left: 0px;
 	right: 0px;
 	margin: 0px auto;
 	width: min-content;
 	color: var(--theme-primary-text);
+	font-size: 1.4em;
 }

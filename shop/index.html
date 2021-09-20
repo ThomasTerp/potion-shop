@@ -4,6 +4,7 @@
 	<head>
 		<title>Shop - Potion Shop</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="../main/main.css" rel="stylesheet" />
 		<link href="shop.css" rel="stylesheet" />
 		<script src="shop.js" type="module"></script>
@@ -11,16 +12,23 @@
 	<body>
 		<div id="root">
 			<header>
-				<a href="../">Home</a>
-				<a href="/shop">Shop</a>
-				<a href="/contact">Contact</a>
-				<a href="/about">About</a>
+				<a class="logo" href="../">
+					<img src="../main/logo.png" alt="Logo" />
+				</a>
+				<nav>
+					<a href="../">Home</a>
+					<a href="/shop">Shop</a>
+					<a href="/contact">Contact</a>
+					<a href="/about">About</a>
+				</nav>
 			</header>
 			<main>
 				<div class="counter">
 
 				</div>
+				<div class="beam"></div>
 				<div class="shelf"></div>
+				<div class="beam"></div>
 			</main>
 			<footer></footer>
 		</div>
