@@ -8,7 +8,7 @@
 :root {
 	--theme-primary: #3f200f;
 	--theme-primary-dark: #1A0D06;
-	--theme-primary-text: white;
+	--theme-primary-text: rgb(255, 255, 255);
 	--theme-primary-shadow: black;
 }
 
@@ -30,15 +30,20 @@ header {
 
 nav {
 	position: absolute;
-	left: 460px;
-	top: 64px;
+	left: 450px;
+	top: 60px;
 }
 
 nav > a {
 	text-decoration: none;
 	color: var(--theme-primary-text);
 	font-size: 2rem;
-	padding-right: 1rem;
+	padding: 0.4rem 1rem;
+}
+
+nav > a:hover, .active {
+	background-color: var(--theme-primary-dark);
+	border-radius: 16px;
 }
 
 nav > a:visited {
@@ -50,12 +55,13 @@ main {
 	background-image: url(background.png);
 	background-position-x: center;
 	overflow-x: hidden;
+	color: var(--theme-primary-text);
 }
 
 footer {
 	background-image: url(footer.png);
 	background-color: var(--theme-primary-dark);
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	height: 256px;
 }
 
@@ -73,21 +79,25 @@ footer {
 }
 
 
-@media only screen and (max-width: 1000px) {
-	nav {
-		left: 20px;
-		top: 96px;
+@media only screen and (max-width: 1060px) {
+	header {
+		text-align: center;
 	}
-
+	
+	nav {
+		position: initial;
+		margin-top: -16px;
+	}
+	
 	.logo > img {
 		padding: 6px;
 	}
 }
 
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 580px) {
 	nav {
-		top: 100px;
+		margin-top: -12px;
 	}
 
 	nav > a {

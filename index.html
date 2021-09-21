@@ -4,18 +4,25 @@
 	<head>
 		<title>Potion Shop</title>
 		<meta charset="utf-8">
-		<link href="/main/main.css" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="main/main.css" rel="stylesheet" />
 	</head>
 	<body>
-		<script src="/index.js" type="module"></script>
-		<div class="root">
+		<div id="root">
 			<header>
-				<a href="../">Home</a>
-				<a href="/shop">Shop</a>
-				<a href="/contact">Contact</a>
-				<a href="/about">About</a>
+				<a class="logo" href="../">
+					<img src="/main/logo.png" alt="Logo" />
+				</a>
+				<nav>
+					<a class="active" href="/">Home</a>
+					<a href="shop/">Shop</a>
+					<a href="contact/">Contact</a>
+					<a href="about/">About</a>
+				</nav>
 			</header>
-			<main></main>
+			<main>
+				<h1>Welcome!</h1>
+			</main>
 			<footer></footer>
 		</div>
 	</body>

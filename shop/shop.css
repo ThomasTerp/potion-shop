@@ -1,10 +1,23 @@
 
 .counter {
+	position: relative;
 	background-image: url(counter-background.png);
 	background-color: var(--theme-primary-dark);
 	background-position-y: bottom;
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	height: 400px;
+}
+
+.checkout {
+	position: absolute;
+	top: 200px;
+	right: 100px;
+	color: var(--theme-primary-text);
+	font-size: 1.6rem;
+	padding: 1rem;
+	background-color: var(--theme-primary);
+	border-radius: 16px;
+	cursor: pointer;
 }
 
 .shelf {
@@ -50,6 +63,31 @@
 	text-shadow: var(--theme-primary-shadow) 0px 0px 1px, var(--theme-primary-shadow) 0px 0px 1px, var(--theme-primary-shadow) 0px 0px 1px, var(--theme-primary-shadow) 0px 0px 1px, var(--theme-primary-shadow) 0px 0px 1px, var(--theme-primary-shadow) 0px 0px 1px;;
 }
 
+.potion:not(.interactive) > .title {
+	visibility: hidden;
+}
+
+.potion > .addToCart {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	margin: 0px auto;
+	width: 6rem;
+	top: 80px;
+	color: var(--theme-primary-text);
+	font-size: 1rem;
+	padding: 0.8rem;
+	background-color: var(--theme-primary-dark);
+	border-radius: 16px;
+	text-align: center;
+	visibility: hidden;
+	cursor: pointer;
+}
+
+.potion.interactive:hover > .addToCart {
+	visibility: initial;
+}
+
 .potion > .photo {
 	position: absolute;
 	bottom: 30px;
@@ -68,4 +106,11 @@
 	width: min-content;
 	color: var(--theme-primary-text);
 	font-size: 1.4em;
+}
+
+
+.cart {
+	position: absolute;
+	left: 0px;
+	top: 0px;
 }
