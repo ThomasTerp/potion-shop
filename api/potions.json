@@ -2,146 +2,146 @@
 	{
 		"id": "0",
 		"title": "Healing Potion",
-		"price": "9.99",
+		"price": 9.99,
 		"imageSrc": "potions/healing.png"
 	},
 	{
 		"id": "1",
 		"title": "Mana Potion",
-		"price": "9.99",
+		"price": 9.99,
 		"imageSrc": "potions/mana.png"
 	},
 	{
 		"id": "2",
 		"title": "Strong Mana Potion",
-		"price": "19.99",
+		"price": 19.99,
 		"imageSrc": "potions/strong-mana.png"
 	},
 	{
 		"id": "3",
 		"title": "Flame Potion",
-		"price": "7.99",
+		"price": 7.99,
 		"imageSrc": "potions/flame.png"
 	},
 	{
 		"id": "4",
 		"title": "Strong Flame Potion",
-		"price": "15.99",
+		"price": 15.99,
 		"imageSrc": "potions/strong-flame.png"
 	},
 	{
 		"id": "5",
 		"title": "Poison Potion",
-		"price": "11.99",
+		"price": 11.99,
 		"imageSrc": "potions/poison.png"
 	},
 	{
 		"id": "6",
 		"title": "Escape Potion",
-		"price": "5.99",
+		"price": 5.99,
 		"imageSrc": "potions/escape.png"
 	},
 	{
 		"id": "7",
 		"title": "Illumination Potion",
-		"price": "4.99",
+		"price": 4.99,
 		"imageSrc": "potions/illumination.png"
 	},
 	{
 		"id": "8",
 		"title": "Vision Potion",
-		"price": "13.99",
+		"price": 13.99,
 		"imageSrc": "potions/vision.png"
 	},
 	{
 		"id": "9",
 		"title": "Memory Potion",
-		"price": "13.99",
+		"price": 13.99,
 		"imageSrc": "potions/memory.png"
 	},
 	{
 		"id": "10",
 		"title": "Luck Potion",
-		"price": "7.77",
+		"price": 7.77,
 		"imageSrc": "potions/luck.png"
 	},
 	{
 		"id": "11",
 		"title": "Perception Potion",
-		"price": "7.99",
+		"price": 7.99,
 		"imageSrc": "potions/perception.png"
 	},
 
 	{
 		"id": "0",
 		"title": "Healing Potion",
-		"price": "9.99",
+		"price": 9.99,
 		"imageSrc": "potions/healing.png"
 	},
 	{
 		"id": "1",
 		"title": "Mana Potion",
-		"price": "9.99",
+		"price": 9.99,
 		"imageSrc": "potions/mana.png"
 	},
 	{
 		"id": "2",
 		"title": "Strong Mana Potion",
-		"price": "19.99",
+		"price": 19.99,
 		"imageSrc": "potions/strong-mana.png"
 	},
 	{
 		"id": "3",
 		"title": "Flame Potion",
-		"price": "7.99",
+		"price": 7.99,
 		"imageSrc": "potions/flame.png"
 	},
 	{
 		"id": "4",
 		"title": "Strong Flame Potion",
-		"price": "15.99",
+		"price": 15.99,
 		"imageSrc": "potions/strong-flame.png"
 	},
 	{
 		"id": "5",
 		"title": "Poison Potion",
-		"price": "11.99",
+		"price": 11.99,
 		"imageSrc": "potions/poison.png"
 	},
 	{
 		"id": "6",
 		"title": "Escape Potion",
-		"price": "5.99",
+		"price": 5.99,
 		"imageSrc": "potions/escape.png"
 	},
 	{
 		"id": "7",
 		"title": "Illumination Potion",
-		"price": "4.99",
+		"price": 4.99,
 		"imageSrc": "potions/illumination.png"
 	},
 	{
 		"id": "8",
 		"title": "Vision Potion",
-		"price": "13.99",
+		"price": 13.99,
 		"imageSrc": "potions/vision.png"
 	},
 	{
 		"id": "9",
 		"title": "Memory Potion",
-		"price": "13.99",
+		"price": 13.99,
 		"imageSrc": "potions/memory.png"
 	},
 	{
 		"id": "10",
 		"title": "Luck Potion",
-		"price": "7.77",
+		"price": 7.77,
 		"imageSrc": "potions/luck.png"
 	},
 	{
 		"id": "11",
 		"title": "Perception Potion",
-		"price": "7.99",
+		"price": 7.99,
 		"imageSrc": "potions/perception.png"
 	}
 ]

@@ -7,6 +7,18 @@ $(() =>
 {
 	const cartPotions = [];
 
+	const getTotalCost = () =>
+	{
+		let cost = 0;
+
+		for(const potion of cartPotions)
+		{
+			cost += potion.price;
+		}
+
+		return cost;
+	};
+
 	// Resize elements when the page has changed size
 	const resize = () =>
 	{
@@ -61,7 +73,10 @@ $(() =>
 					left: `${cartPotions.length * 80}px`,
 					top: "200px"
 				})
-				cartPotions.push($cartPotion);
+				cartPotions.push(potion);
+
+				// Update checkout text
+				$(".checkout").html(`$${getTotalCost().toFixed(2)} - Checkout`);
 			});
 		}
 
