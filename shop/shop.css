@@ -1,21 +1,44 @@
 
 .counter {
 	position: relative;
+	background-image: url(../main/header.png);
+	background-position-y: bottom;
+	height: 464px;
+}
+
+.counter > .background {
 	background-image: url(counter-background.png);
-	background-color: var(--theme-primary-dark);
 	background-position-y: bottom;
 	background-repeat: repeat-x;
-	height: 400px;
+	background-color: var(--theme-primary-dark);
+	height: 320px;
+}
+
+.shopkeeper {
+	position: absolute;
+	top: 10px;
+	right: 100px;
+	width: 280px;
+}
+
+.total {
+	position: absolute;
+	top: 360px;
+	left: 84px;
+	color: var(--theme-primary-text);
+	font-size: 1.6rem;
+	padding: 1rem;
+
 }
 
 .checkout {
 	position: absolute;
-	top: 200px;
-	right: 100px;
+	top: 360px;
+	right: 140px;
 	color: var(--theme-primary-text);
 	font-size: 1.6rem;
 	padding: 1rem;
-	background-color: var(--theme-primary);
+	background-color: var(--theme-primary-dark);
 	border-radius: 16px;
 	cursor: pointer;
 }

@@ -61,7 +61,7 @@ $(() =>
 
 		if(isInteractive)
 		{
-			$potion.on("click", () =>
+			$potion.find(".addToCart").on("click", () =>
 			{
 				const $cartPotion = buildPotion(potion, false, $(".cart"));
 				$cartPotion.css({
@@ -71,12 +71,12 @@ $(() =>
 				});
 				$cartPotion.animate({
 					left: `${cartPotions.length * 80}px`,
-					top: "200px"
+					top: "316px"
 				})
 				cartPotions.push(potion);
 
-				// Update checkout text
-				$(".checkout").html(`$${getTotalCost().toFixed(2)} - Checkout`);
+				// Update total text
+				$(".total").html(`Total: $${getTotalCost().toFixed(2)}`);
 			});
 		}
 
