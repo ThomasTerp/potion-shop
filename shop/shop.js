@@ -7,6 +7,7 @@ $(() =>
 {
 	const cartPotions = [];
 
+	// Get total cost of potions
 	const getTotalCost = () =>
 	{
 		let cost = 0;
